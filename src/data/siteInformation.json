@@ -1,0 +1,30 @@
+{
+  "pages": [
+    {
+      "name": "Home",
+      "nameKey": "HOME",
+      "type": "simple"
+    },
+    {
+      "name": "Book Reviews",
+      "nameKey": "BOOK_REVIEWS",
+      "type": "post"
+    },
+    {
+      "name": "About",
+      "nameKey": "ABOUT",
+      "type": "simple"
+    },
+    {
+      "name": "Contact",
+      "nameKey": "CONTACT",
+      "type": "simple"
+    }
+  ],
+  "pageContentByNameKey": {
+    "HOME": "This is where the text for the Home page goes",
+    "ABOUT": "This is where the text for the About page goes",
+    "CONTACT": "This is where the text for the Contact page goes",
+    "BOOK_REVIEWS": []
+  }
+}

@@ -7,21 +7,14 @@ const cx = classNames.bind(styles);
 
 const NavigationBar = (props) => (
   <div className={cx('navigationBar')}>
-    <NavigationButton
-      index={0}
-      isSelected={props.selectedPageIndex === 0}
-      name={'Home'}
-    />
-    <NavigationButton
-      index={1}
-      isSelected={props.selectedPageIndex === 1}
-      name={'About'}
-    />
-    <NavigationButton
-      index={2}
-      isSelected={props.selectedPageIndex === 2}
-      name={'Contact'}
-    />
+    {props.pages.map((page, index) => (
+      <NavigationButton
+        isSelected={props.selectedPageIndex === index}
+        key={`pageIndex ${index}`}
+        name={page.name}
+        onClick={() => props.onChangePageIndex(index)}
+      />
+    ))}
   </div>
 );
 

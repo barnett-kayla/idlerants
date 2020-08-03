@@ -45,6 +45,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'IdleRants',
+      template: path.resolve(__dirname, 'src/idlerants.html'),
       filename: 'idlerants.html',
     }),
   ],
